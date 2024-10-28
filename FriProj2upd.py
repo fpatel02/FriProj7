@@ -1,3 +1,5 @@
+#Powerball Generator
+
 import random  # Importing the random module to use random number generation
 
 # Greeting the user
