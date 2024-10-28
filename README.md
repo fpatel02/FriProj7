@@ -96,3 +96,30 @@ FridayProj3upd:
         if guess.lower() == 'quit':: Checks if the user quit the guessing loop.
         break: Exits the main game loop.
         print("Thank you for playing! Goodbye!"): Displays a final farewell message.
+
+FridayProj4upd:
+    Defining the Dictionary:
+
+        trivia_questions = {...}: This creates a dictionary where each key-value pair consists of a trivia question (key) and its corresponding answer (value).
+    Starting the Quiz:
+
+        print("Welcome to the Trivia Quiz Bowl!"): Displays a welcome message to the user.
+        print("You will be asked 5 trivia questions. Let's see how many you can answer correctly!"): Informs the user about what to expect in the quiz.
+    Looping Through Questions:
+
+        for question, correct_answer in trivia_questions.items():: This loop iterates over each key-value pair in the dictionary, unpacking the question and its correct answer.
+    Displaying the Question:
+
+        print(f"\nQuestion: {question}"): Prints the current trivia question.
+        user_answer = input("Your answer: ").strip(): Prompts the user for their answer and removes any leading or trailing whitespace.
+    Checking the User's Answer:
+
+        if user_answer.lower() == correct_answer.lower():: Compares the user's answer to the correct answer in a case-insensitive manner.
+        print("Correct! Well done!"): Prints feedback for a correct answer.
+        else:: Executes if the user's answer is incorrect.
+        print(f"Wrong! The correct answer is: {correct_answer}"): Provides feedback and shows the correct answer.
+    Ending the Quiz:
+
+        print("\nThank you for playing the Trivia Quiz Bowl! Goodbye!"): Displays a farewell message to the user once all questions have been asked.
+
+        
