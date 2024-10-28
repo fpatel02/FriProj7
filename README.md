@@ -122,4 +122,26 @@ FridayProj4upd:
 
         print("\nThank you for playing the Trivia Quiz Bowl! Goodbye!"): Displays a farewell message to the user once all questions have been asked.
 
-        
+FridayProj5upd:
+    Defining Functions for Colors:
+
+        Each function (e.g., def red(text):) takes a string text as input.
+        return f"\033[91m{text}\033[0m": The string is formatted with ANSI escape codes to change the text color.
+        \033[91m: Sets the text color to red.
+        \033[0m: Resets the color back to the default after the text.
+    Main Program Execution:
+
+        if __name__ == "__main__":: This checks if the script is being run directly (not imported as a module).
+        print(red("This text is red!")): Calls the red function and prints the text in red color. This is repeated for each color function.
+        User Input for Color Selection:
+
+        color_choice = input("Choose a color (red, green, blue, yellow, magenta): ").strip().lower(): Prompts the user to choose a color, stripping whitespace and converting to lowercase for consistency.
+        user_text = input("Enter the text you want to display: "): Prompts the user to input the text they wish to display.
+    Mapping Color Choices to Functions:
+
+        color_functions = {...}: This dictionary maps color names to their respective functions, allowing for easy lookup based on user input.
+    Validating User Input:
+
+        if color_choice in color_functions:: Checks if the user's choice is valid.
+        print(color_functions[color_choice](user_text)): Calls the corresponding function and prints the colored text.
+        else:: If the user's choice is invalid, it prints an error message.
