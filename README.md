@@ -145,3 +145,15 @@ FridayProj5upd:
         if color_choice in color_functions:: Checks if the user's choice is valid.
         print(color_functions[color_choice](user_text)): Calls the corresponding function and prints the colored text.
         else:: If the user's choice is invalid, it prints an error message.
+
+FridayProj6upd:
+    Class Definition: class BankAccount defines a class to manage bank accounts.
+    __init__ Method: This method initializes a new bank account with an account number and sets the balance to zero.
+    deposit Method: This method adds a specified amount to the balance. It checks if the amount is positive.
+    withdraw Method: This method subtracts a specified amount from the balance if there are sufficient funds. It checks for positive amounts and available funds.
+    check_balance Method: This method displays the current balance of the account.
+    main Function: This function handles user input and interacts with the BankAccount class.
+        It prompts the user for their account number and creates an account.
+        It enters an indefinite loop, allowing users to choose options for depositing, withdrawing, checking their balance, or exiting.
+        User inputs are processed, and appropriate methods are called based on their choices.
+    Program Execution: The program starts by calling the main function.
