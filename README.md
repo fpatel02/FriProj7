@@ -46,3 +46,53 @@ FridayProj2upd:
     Farewell Message:
 
         print("\nThank you for using the Powerball Number Generator! Good luck!"): Displays a goodbye message to the user.
+
+FridayProj3upd:
+    Importing the Random Module:
+
+        import random: This imports the random module to enable random number generation.
+    Greeting the User:
+
+        print("Welcome to the Number Guessing Game!"): Displays a welcome message to the user.
+        play_game = input("Do you want to play? (yes/no): ").strip().lower(): Asks the user if they want to play, strips any extra spaces, and converts the input to lowercase for consistency.
+    Checking User's Response:
+
+        if play_game != 'yes':: Checks if the user's response is not 'yes'.
+        print("Thank you for your time! Goodbye!"): Displays a farewell message if the user does not want to play.
+    Starting the Game Loop:
+
+        else:: If the user wants to play, we enter the game loop.
+        while True:: Begins an infinite loop for playing the game.
+        number_to_guess = random.randint(1, 10): Generates a random number between 1 and 10.
+        attempts = 0: Initializes a counter for the number of attempts made by the user.
+    Guessing Loop:
+
+        print("\nI've chosen a number between 1 and 10. Try to guess it!"): Informs the user that the game has started.
+        while True:: Begins another infinite loop for guessing the number.
+        guess = input("Enter your guess (or type 'quit' to exit): "): Prompts the user to enter their guess.
+    Handling Quit Option:
+
+        if guess.lower() == 'quit':: Checks if the user wants to quit the game.
+        print("Thank you for playing! Goodbye!"): Displays a farewell message for quitting.
+        break: Exits the guessing loop.
+    Counting Attempts and Validating Input:
+
+        attempts += 1: Increments the attempt counter.
+        try:: Starts a try-except block to handle errors.
+        guess = int(guess): Converts the guess to an integer.
+        except ValueError:: Catches any errors from invalid input.
+        print("Please enter a valid number."): Prompts for valid input.
+        continue: Skips to the next iteration of the loop.
+    Checking the Guess:
+
+        if guess < number_to_guess:: Checks if the guess is too low.
+        print("Too low! Try again."): Informs the user to try again.
+        elif guess > number_to_guess:: Checks if the guess is too high.
+        print("Too high! Try again."): Informs the user to try again.
+        else:: If the guess is correct.
+        print(f"Congratulations! You guessed the number {number_to_guess} in {attempts} attempts!"): Congratulates the user.
+    Ending the Game:
+
+        if guess.lower() == 'quit':: Checks if the user quit the guessing loop.
+        break: Exits the main game loop.
+        print("Thank you for playing! Goodbye!"): Displays a final farewell message.
